@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		162C89001EA62BA200117D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C88FF1EA62BA200117D81 /* AppDelegate.swift */; };
-		162C89021EA62BA200117D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C89011EA62BA200117D81 /* ViewController.swift */; };
-		162C89051EA62BA200117D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162C89031EA62BA200117D81 /* Main.storyboard */; };
 		162C89071EA62BA200117D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162C89061EA62BA200117D81 /* Assets.xcassets */; };
 		162C890A1EA62BA200117D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162C89081EA62BA200117D81 /* LaunchScreen.storyboard */; };
 		162C89151EA62BA200117D81 /* PlataDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C89141EA62BA200117D81 /* PlataDemoTests.swift */; };
@@ -25,6 +23,10 @@
 		162C89561EA62C5B00117D81 /* Plata.swift in Headers */ = {isa = PBXBuildFile; fileRef = 162C89501EA62C3700117D81 /* Plata.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		162C89571EA62C5D00117D81 /* PlataField.swift in Headers */ = {isa = PBXBuildFile; fileRef = 162C89511EA62C3700117D81 /* PlataField.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		162C89581EA62C6000117D81 /* PlataHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = 162C89521EA62C3700117D81 /* PlataHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		162C89631EA6333900117D81 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C895F1EA6333900117D81 /* ConfigViewController.swift */; };
+		162C89641EA6333900117D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162C89601EA6333900117D81 /* Main.storyboard */; };
+		162C89651EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C89611EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift */; };
+		162C89661EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C89621EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +84,6 @@
 /* Begin PBXFileReference section */
 		162C88FC1EA62BA200117D81 /* PlataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		162C88FF1EA62BA200117D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		162C89011EA62BA200117D81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		162C89041EA62BA200117D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		162C89061EA62BA200117D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		162C89091EA62BA200117D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		162C890B1EA62BA200117D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +102,10 @@
 		162C89501EA62C3700117D81 /* Plata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plata.swift; sourceTree = "<group>"; };
 		162C89511EA62C3700117D81 /* PlataField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlataField.swift; sourceTree = "<group>"; };
 		162C89521EA62C3700117D81 /* PlataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlataHelper.swift; sourceTree = "<group>"; };
+		162C895F1EA6333900117D81 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		162C89601EA6333900117D81 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		162C89611EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFieldDelegate+Keyboard.swift"; sourceTree = "<group>"; };
+		162C89621EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				162C88FF1EA62BA200117D81 /* AppDelegate.swift */,
-				162C89011EA62BA200117D81 /* ViewController.swift */,
-				162C89031EA62BA200117D81 /* Main.storyboard */,
+				162C895F1EA6333900117D81 /* ConfigViewController.swift */,
+				162C89601EA6333900117D81 /* Main.storyboard */,
+				162C89611EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift */,
+				162C89621EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift */,
 				162C89061EA62BA200117D81 /* Assets.xcassets */,
 				162C89081EA62BA200117D81 /* LaunchScreen.storyboard */,
 				162C890B1EA62BA200117D81 /* Info.plist */,
@@ -398,9 +404,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162C89641EA6333900117D81 /* Main.storyboard in Resources */,
 				162C890A1EA62BA200117D81 /* LaunchScreen.storyboard in Resources */,
 				162C89071EA62BA200117D81 /* Assets.xcassets in Resources */,
-				162C89051EA62BA200117D81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,8 +445,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162C89021EA62BA200117D81 /* ViewController.swift in Sources */,
+				162C89631EA6333900117D81 /* ConfigViewController.swift in Sources */,
+				162C89651EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift in Sources */,
 				162C89001EA62BA200117D81 /* AppDelegate.swift in Sources */,
+				162C89661EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,14 +517,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		162C89031EA62BA200117D81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				162C89041EA62BA200117D81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		162C89081EA62BA200117D81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
