@@ -7,6 +7,13 @@ Plata is a Swift framework for iOS, used to handle and display currency in an ea
 
 ## Installation
 
+### Carthage
+
+Add the following line to your `Cartfile` and run `carthage update Plata`.
+```ogdl
+github "stone-pagamentos/Plata"
+```
+
 ### Manually
 
 Copy `Plata.swift`, `PlataField.swift` and `PlataHelper.swift` into your project.
