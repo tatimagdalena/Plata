@@ -568,7 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -611,7 +611,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -801,6 +801,7 @@
 				162C89261EA62BA200117D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162C89271EA62BA200117D81 /* Build configuration list for PBXNativeTarget "PlataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +810,7 @@
 				162C89291EA62BA200117D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162C892A1EA62BA200117D81 /* Build configuration list for PBXNativeTarget "PlataDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -817,6 +819,7 @@
 				162C892C1EA62BA200117D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162C89491EA62BC700117D81 /* Build configuration list for PBXNativeTarget "Plata" */ = {
 			isa = XCConfigurationList;
@@ -825,6 +828,7 @@
 				162C894B1EA62BC700117D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		162C894D1EA62BC700117D81 /* Build configuration list for PBXNativeTarget "PlataTests" */ = {
 			isa = XCConfigurationList;
@@ -833,6 +837,7 @@
 				162C894F1EA62BC700117D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
