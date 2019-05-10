@@ -11,7 +11,7 @@ Plata is a Swift framework for iOS, used to handle and display currency in an ea
 
 Add the following line to your `Cartfile` and run `carthage update Plata`.
 ```ogdl
-github "stone-pagamentos/Plata"
+github "tatimagdalena/Plata"
 ```
 
 ### Manually
@@ -70,7 +70,7 @@ On the textField Identity Inspector, set the class to PlataField and the module 
 
 - `plata`
    - The currency value can be get at any time by the `plataField.plata` property
-   - You can set a initial value setting `plataField.plata.integer` value
+   - You can set an initial value setting `plataField.plata.integer` value
 
 ```swift
 var plata = plataField.plataModel
