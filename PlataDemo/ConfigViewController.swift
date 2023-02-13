@@ -11,7 +11,7 @@ import Plata
 
 
 enum SegmentedControl: Int {
-    case value = 0, symbol/*, decimal, grouping*/
+    case value = 0, symbol
 }
 
 enum ValueSegment: Int {
@@ -22,34 +22,20 @@ enum SymbolSegment: Int {
     case code = 0, symbol, locale
 }
 
-//enum DecimalSeparatorSegment: Int {
-//    case comma = 0, period
-//}
-//
-//enum GroupingSeparatorSegment: Int {
-//    case comma = 0, period
-//}
-
 
 class ConfigViewController: UITableViewController {
 
     //Storyboard connections
-    
-    //
     @IBOutlet var valueField: PlataField!
-    
     @IBOutlet var formattedStringLabel: UILabel!
     @IBOutlet var centsLabel: UILabel!
     @IBOutlet var realValueLabel: UILabel!
-    
-    
     @IBOutlet var valueSegmentedControl: UISegmentedControl!
     @IBOutlet var valueLimitField: UITextField!
     @IBOutlet var symbolSegmentedControl: UISegmentedControl!
     @IBOutlet var symbolField: UITextField!
     @IBOutlet var decimalSeparatorField: UITextField!
     @IBOutlet var groupingSeparatorField: UITextField!
-    
     
     
     
@@ -69,7 +55,6 @@ class ConfigViewController: UITableViewController {
         
         valueSegmentedControl.tag = SegmentedControl.value.rawValue
         symbolSegmentedControl.tag = SegmentedControl.symbol.rawValue
-        
         
         clearContent()
         
@@ -91,8 +76,8 @@ class ConfigViewController: UITableViewController {
     }
 
     
-    // MARK: - Buttons actions
     
+    // MARK: - Buttons actions
     
     @IBAction func updateValues(_ sender: Any) {
         
@@ -210,8 +195,6 @@ class ConfigViewController: UITableViewController {
     }
     
     func symbolHandler() {
-        
-        
         
         let index = SymbolSegment(rawValue: symbolSegmentedControl.selectedSegmentIndex)
         guard let selected = index else { return }

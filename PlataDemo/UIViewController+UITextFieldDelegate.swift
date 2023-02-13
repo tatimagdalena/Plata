@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIViewController: UITextFieldDelegate{
+extension UIViewController: UITextFieldDelegate {
     func addToolBar(textField: UITextField){
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.default

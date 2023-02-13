@@ -25,7 +25,6 @@
 		162C89581EA62C6000117D81 /* PlataHelper.swift in Headers */ = {isa = PBXBuildFile; fileRef = 162C89521EA62C3700117D81 /* PlataHelper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		162C89631EA6333900117D81 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C895F1EA6333900117D81 /* ConfigViewController.swift */; };
 		162C89641EA6333900117D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162C89601EA6333900117D81 /* Main.storyboard */; };
-		162C89651EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C89611EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift */; };
 		162C89661EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C89621EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +103,6 @@
 		162C89521EA62C3700117D81 /* PlataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlataHelper.swift; sourceTree = "<group>"; };
 		162C895F1EA6333900117D81 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		162C89601EA6333900117D81 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		162C89611EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFieldDelegate+Keyboard.swift"; sourceTree = "<group>"; };
 		162C89621EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,11 +174,10 @@
 		162C88FE1EA62BA200117D81 /* PlataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				162C88FF1EA62BA200117D81 /* AppDelegate.swift */,
 				162C895F1EA6333900117D81 /* ConfigViewController.swift */,
-				162C89601EA6333900117D81 /* Main.storyboard */,
-				162C89611EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift */,
 				162C89621EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift */,
+				162C88FF1EA62BA200117D81 /* AppDelegate.swift */,
+				162C89601EA6333900117D81 /* Main.storyboard */,
 				162C89061EA62BA200117D81 /* Assets.xcassets */,
 				162C89081EA62BA200117D81 /* LaunchScreen.storyboard */,
 				162C890B1EA62BA200117D81 /* Info.plist */,
@@ -446,7 +443,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				162C89631EA6333900117D81 /* ConfigViewController.swift in Sources */,
-				162C89651EA6333900117D81 /* UITextFieldDelegate+Keyboard.swift in Sources */,
 				162C89001EA62BA200117D81 /* AppDelegate.swift in Sources */,
 				162C89661EA6333900117D81 /* UIViewController+UITextFieldDelegate.swift in Sources */,
 			);
