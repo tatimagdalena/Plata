@@ -98,7 +98,7 @@ public class PlataField: UITextField {
     
     // MARK: - Textfield
     
-    func textField(_ textField: UITextField) -> Bool {
+    @objc func textField(_ textField: UITextField) -> Bool {
         
         text = plata.numberFormatter.string(from: NSNumber(value: percentage))
         
