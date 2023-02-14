@@ -41,12 +41,12 @@ public class PlataField: UITextField {
         
         switch valueLimitType {
         case .digits(let dropLastAtDigit):
-            if n.characters.count > dropLastAtDigit {
-                return String(n.characters.dropLast())
+            if n.count > dropLastAtDigit {
+                return String(n.dropLast())
             }
         case .cents(let maxValue):
             if let typedValueInt = Int(n), typedValueInt > maxValue {
-                return String(n.characters.dropLast())
+                return String(n.dropLast())
             }
         default:
             return n
